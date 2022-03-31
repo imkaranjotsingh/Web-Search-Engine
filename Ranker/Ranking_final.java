@@ -31,20 +31,7 @@ public class Ranking_final {
         
         String new_fileName = fileName+"URL>"+Url;
         String new_filename = new_fileName.replaceAll("\\s",""); 
-        /*
-        String s ="";
-        new_fileName = new_fileName.replaceAll("\\s", "");
-        //System.out.println(new_fileName);
-    	for(int i=0; i < new_fileName.length(); i++){
-		    if(new_fileName.charAt(i) == '>'){
-		    	for(int j = i+1;j < new_fileName.length();j++) {
-		    		s = s + new_fileName.charAt(j); 
-		    	}
-		    }
-    	}
-    	//System.out.println(s);
-        //new_fileName = s;
-        */
+
         countMap.put(new_filename,count);
 
         
