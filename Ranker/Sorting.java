@@ -6,12 +6,8 @@ import java.util.LinkedHashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
-/**
- * @author Team ACC (Karanjot Singh)
- * In this class we have used in-built sort function in collections class from java.util package. 
- * In built sort uses the dual-pivot sorting method.
- * For comparison, comparator class is used. 
- */
+
+
 public class Sorting {
 
 	// function to sort hashmap by values
@@ -26,8 +22,6 @@ public class Sorting {
 			}
 		});
 		
-		// Sort the list
-		//Collections.sort(list,Collections.reverseOrder());
 
 		// put data from sorted list to hashmap
 		HashMap<String, Integer> temp = new LinkedHashMap<String, Integer>();
