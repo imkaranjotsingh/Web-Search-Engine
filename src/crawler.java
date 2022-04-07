@@ -34,6 +34,11 @@ public class crawler implements Runnable{
 	// Overriding runnable interface method
 	@Override
 	public void run() {
+		try {
+			clear_file();
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
 		crawl(1,first_link,0);
 		
 	}
@@ -117,6 +122,11 @@ public class crawler implements Runnable{
             catch (Exception e) {
             }
         }
+	}
+	public void clear_file() throws FileNotFoundException
+	{
+		PrintWriter pw = new PrintWriter("/Users/manpreetsingh/Downloads/searchENGranking/Data/"+ID+".txt");
+		pw.close();
 	}
 	
 	public Thread getThread(){
