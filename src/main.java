@@ -42,6 +42,13 @@ public class main implements Constants {
 				System.out.println("Auto Corrected Word"+ Suggested_word);
 				runcrawler.main(args);
 				links = SearchCrawlerData.SearchWord(Suggested_word);
+				if(links.size()==0)
+				{
+					System.out.println("Data not present.");
+					continue;
+				}
+				else 
+				{
 				Object[] key = links.keySet().toArray();
 				String[] URL = Arrays.stream(key).toArray(String[]::new);
 
@@ -52,6 +59,7 @@ public class main implements Constants {
 				System.out.println("Debug"+ URL[0] +"***" + fileName[0] + "***"+Suggested_word);
 				count = Ranking_final.Counting(URL, fileName, Suggested_word);
 				Ranking_final.sortIndex(count);
+				}
 			}
 			else if (s.equalsIgnoreCase("exit")) {
 
