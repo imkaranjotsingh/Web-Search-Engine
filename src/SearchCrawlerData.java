@@ -7,9 +7,6 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.StringTokenizer;
 
-import textprocessing.In;
-import textprocessing.TST;
-
 public class SearchCrawlerData {
 
 	public static HashMap SearchWord(String Word) {
